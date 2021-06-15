@@ -16,27 +16,20 @@ html{
 /*Sections*/
 /*Section Passion*/
 
-.section-block{
-    height:calc(100vh - 8rem);
-    padding: 5rem ;
-}
+.section-block{ height:calc(100vh - 8rem);padding: 5rem ;}
 .section-block.not-fullscreen{height: auto;}
-.section-block.grey{
-background-color: #CE1126;
-}
-    .section-block h1{
-    display: block;
-    margin-bottom: 2.5rem;
-    text-align: center;
-    font-size: 4.8rem;
-    font-weight: 600;
+.section-block.red{background-color: #CE1126;}
+    .section-block h1, .section-block h2 {display: block;margin-bottom: 10rem;text-align: center;font-size: 4.8rem;font-weight: 600;}
+.section-block.red h1, .section-block h2{color: #fff;}
+/*section color background*/
+.section-block.blue{background-color: #002B7F;}
+.section-block.blue h1, .section-block h2{color: #fff;}
 
-}
-.section-block.grey h1{
-color: #fff;
-}
+
 /*Section Passion end*/
 
+/*Section My projects (yellow)*/
+.section-block.yellow{ background-color: #FCD116;}
 /*Sections end*/
 
 /*Navigation*/
@@ -83,12 +76,8 @@ header + * {
 
 /*media*/
 @media(max-width:580px){
-    header{
-    padding: 0.75rem 2.5rem; 
-    }
-    .navigation > a {
-    margin-bottom: 0.5rem;
-    }
+    header{ padding: 0.75rem 2.5rem; }
+    .navigation > a {margin-bottom: 0.5rem; }
 }
 @media (max-width:767px) {
     .hero {display: block;  padding: 5rem 2.5rem;}
@@ -98,10 +87,11 @@ header + * {
 @media (max-width:767px) {
     .section-block { height: auto; min-height:calc(100vh - 8rem); padding: 0 2.5rem;}
     .section-block.not-fullscreen{min-height: none;}
-    .section-block h1{font-size: 2.8rem;}
+    .section-block h1 ,  .section-block h2{font-size: 2.8rem;margin-bottom: 5rem;}
 
     }
     @media (max-width:767px) {
+        .grid-box{float: left; margin: 0 2.5rem 4rem;}
         .box-half{width:calc(100% - 5rem);}
         .box-third{width:calc(50% - 5rem);}
         .box-quarter{width:calc(33.33% - 5rem);}
@@ -149,14 +139,28 @@ text-align: left;
 /*Hero end*/
 
 
-/*Pasiunile mele*/
-
-.my-passions {}
+/*Pasiunile mele si Proiectele mele*/
 .my-passions h1{margin-bottom: 7.5rem;}
 .my-passions-inner-container{color: white;}
-.my-passions-inner-container h2{ font-size: 2.4rem; text-align: center; margin-bottom: 2.5rem;}
+.my-passions-inner-container h3{ font-size: 2.4rem; text-align: center; margin-bottom: 2.5rem; font-weight: 600;}
 .my-passions-inner-container p{font-size: 1.6rem; text-align: justify;}
-/*Pasiunile mele end*/
+
+.my-portofolio h1{margin-bottom: 7.5rem;}
+.my-portofolio-inner-container{color: white;}
+.my-portofolio-inner-container h3{ font-size: 2.4rem; text-align: center; margin-bottom: 2.5rem; font-weight: 600;}
+.my-portofolio-inner-container p{font-size: 1.6rem; text-align: justify;}
+
+/*Pasiunile si proiectele mele end*/
+
+/*Recomandari*/
+.rec-section-box{display:flex;align-items: center; color: white;}
+.rec-section-box > img {width: 15rem; height: 15rem;margin-right: 2.5rem; border-radius: 50%;}
+.rec-section-box h3 {display:block; margin-bottom: 2rem; font-size: 2.4rem;font-weight: 600;}  
+.rec-section-box p {font-size: 1.4rem;}
+
+/*Recomandari end*/
+
+
 
 /*Grid*/
 .grid {width:calc(100% + 5rem); margin: 0 -2.5rem;}
